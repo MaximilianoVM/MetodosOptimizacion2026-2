@@ -1,5 +1,5 @@
-$C<i>$ -> Clases y trabajos de clase 
+Ci -> Clases y trabajos de clase 
 
-$T<i>$ -> Tareas 
+Ti -> Tareas 
 
-$P<i>$ -> Proyectos
+Pi -> Proyectos
