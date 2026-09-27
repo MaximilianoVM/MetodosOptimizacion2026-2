@@ -1,5 +1,5 @@
-Ci -> Clases y trabajos de clase 
+Ci_   ➡️   Clases y trabajos de clase 
 
-Ti -> Tareas 
+Ti_   ➡️   Tareas 
 
-Pi -> Proyectos
+Pi_   ➡️   Proyectos
