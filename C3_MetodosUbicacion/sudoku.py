@@ -72,18 +72,17 @@ def sudoku(cuadrantes: list):
     # problema de factibilidad
     mdl.minimize(0)
     
-    sol = mdl.solve(log_output=True)
-    
-    # construye 
-    
+    sol = mdl.solve(log_output=False)   # False: ya no imprime el log de CPLEX
+
+    if sol is None:
+        return None
+
     R = [leer_bloque(p, I_i, J_j, K_k) for p in bloques]
 
     solucion = np.block([[R[0], R[1], R[2]],
-                        [R[3], R[4], R[5]],
-                        [R[6], R[7], R[8]]])
-    print("solucion: \n", solucion)
-
-    return sol
+                         [R[3], R[4], R[5]],
+                         [R[6], R[7], R[8]]])
+    return solucion
     
     
 def leer_bloque(var, I_i, J_j, K_k):
